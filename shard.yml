@@ -1,0 +1,29 @@
+name: suzuri
+version: 1.0.0
+
+authors:
+  - moe <moe@busyloop.net>
+
+description: |
+  Authenticated and encrypted tokens
+
+crystal: 0.34.0
+
+license: MIT
+
+dependencies:
+  sodium:
+    github: didactic-drunk/sodium.cr
+    version: ~> 1.1.1
+
+  zstd:
+    github: didactic-drunk/zstd.cr
+    version: ~> 1.1.0
+
+development_dependencies:
+  timecop:
+    github: crystal-community/timecop.cr
+
+  ameba:
+    github: crystal-ameba/ameba
+    version: ~> 0.12.0
