@@ -1,0 +1,21 @@
+name: Build
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    container:
+      image: crystallang/crystal
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install packages
+      run: apt update && apt install -y wget
+    - name: Patch shard.yml until https://github.com/didactic-drunk/zstd.cr/pull/2 is released
+      run: "sed -i 's/version: ~> 1.1.0/branch: master/' shard.yml"
+    - name: Install dependencies
+      run: shards install
+    - name: Run tests
+      run: make ci

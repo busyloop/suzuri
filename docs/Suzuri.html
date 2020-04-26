@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Crystal Docs 0.33.0">
+
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/doc.js"></script>
+
+<svg class="hidden">
+  <symbol id="octicon-link" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+  </symbol>
+</svg>
+
+  <meta id="repository-name" content="github.com/busyloop/suzuri">
+  <title>Suzuri - github.com/busyloop/suzuri</title>
+  <script type="text/javascript">
+    CrystalDoc.base_path = "";
+  </script>
+</head>
+<body>
+
+<div class="sidebar">
+  <div class="sidebar-header">
+    <div class="search-box">
+      <input type="search" class="search-input" placeholder="Search..." spellcheck="false" aria-label="Search">
+    </div>
+
+    <div class="repository-links">
+      <a href="index.html">README</a>
+    </div>
+  </div>
+
+  <div class="search-results" class="hidden">
+    <ul class="search-list"></ul>
+  </div>
+
+  <div class="types-list">
+    <ul>
+  
+  <li class="parent " data-id="github.com/busyloop/suzuri/JSON" data-name="json">
+      <a href="JSON.html">JSON</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/busyloop/suzuri/JSON/Serializable" data-name="json::serializable">
+      <a href="JSON/Serializable.html">Serializable</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class="parent open current" data-id="github.com/busyloop/suzuri/Suzuri" data-name="suzuri">
+      <a href="Suzuri.html">Suzuri</a>
+      
+        <ul>
+  
+  <li class="parent " data-id="github.com/busyloop/suzuri/Suzuri/Error" data-name="suzuri::error">
+      <a href="Suzuri/Error.html">Error</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/busyloop/suzuri/Suzuri/Error/DecodeError" data-name="suzuri::error::decodeerror">
+      <a href="Suzuri/Error/DecodeError.html">DecodeError</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/busyloop/suzuri/Suzuri/Error/DecryptionFailed" data-name="suzuri::error::decryptionfailed">
+      <a href="Suzuri/Error/DecryptionFailed.html">DecryptionFailed</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/busyloop/suzuri/Suzuri/Error/MalformedInput" data-name="suzuri::error::malformedinput">
+      <a href="Suzuri/Error/MalformedInput.html">MalformedInput</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/busyloop/suzuri/Suzuri/Error/TokenExpired" data-name="suzuri::error::tokenexpired">
+      <a href="Suzuri/Error/TokenExpired.html">TokenExpired</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/busyloop/suzuri/Suzuri/Token" data-name="suzuri::token">
+      <a href="Suzuri/Token.html">Token</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+  </div>
+</div>
+
+
+<div class="main-content">
+<h1 class="type-name">
+
+  <span class="kind">module</span> Suzuri
+
+</h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2>
+    <a id="defined-in" class="anchor" href="#defined-in">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Defined in:
+  </h2>
+  
+    
+      <a href="https://github.com/busyloop/suzuri/blob/0aea515eb073bb843844d567fcdf1c3edad8141b/src/suzuri.cr#L5" target="_blank">
+        suzuri.cr
+      </a>
+    
+    <br/>
+  
+
+
+
+  
+    <h2>
+      <a id="constant-summary" class="anchor" href="#constant-summary">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+      Constant Summary
+    </h2>
+  
+  <dl>
+    
+      <dt class="entry-const" id="VERSION">
+        <strong>VERSION</strong> = <code><span class="s">&quot;1.0.0&quot;</span></code>
+      </dt>
+      
+    
+  </dl>
+
+
+
+
+
+  <h2>
+    <a id="class-method-summary" class="anchor" href="#class-method-summary">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Class Method Summary
+  </h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#decode(token:String,key:String,ttl:Time::Span?=nil):Token-class-method" class="signature"><strong>.decode</strong>(token : String, key : String, ttl : Time::Span? = <span class="n">nil</span>) : Token</a>
+        
+          <div class="summary"><p>Decodes a Suzuri token.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#encode(payload:String%7CBytes,key:String%7CBytes,timestamp:Time=Time.utc,compress_level=3,compress_threshold:UInt64=512):String-class-method" class="signature"><strong>.encode</strong>(payload : String | Bytes, key : String | Bytes, timestamp : Time = <span class="t">Time</span>.utc, compress_level = <span class="n">3</span>, compress_threshold : UInt64 = <span class="n">512</span>) : String</a>
+        
+          <div class="summary"><p>Encodes a Suzuri token.</p></div>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+
+
+<div class="methods-inherited">
+  
+</div>
+
+
+
+
+  <h2>
+    <a id="class-method-detail" class="anchor" href="#class-method-detail">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Class Method Detail
+  </h2>
+  
+    <div class="entry-detail" id="decode(token:String,key:String,ttl:Time::Span?=nil):Token-class-method">
+      <div class="signature">
+        
+        def self.<strong>decode</strong>(token : String, key : String, ttl : Time::Span? = <span class="n">nil</span>) : <a href="Suzuri/Token.html">Token</a>
+
+        <a class="method-permalink" href="#decode(token:String,key:String,ttl:Time::Span?=nil):Token-class-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Decodes a Suzuri token.</p>
+
+<p><strong>Examples:</strong></p>
+
+<pre><code><span class="c"># Decode</span>
+<span class="t">Suzuri</span>.decode(token, <span class="t">KEY</span>) <span class="c"># =&gt; Suzuri::Token</span>
+
+<span class="c"># Decode with a ttl constraint</span>
+<span class="t">Suzuri</span>.decode(token, <span class="t">KEY</span>, <span class="n">5</span>.minutes) <span class="c"># =&gt; Suzuri::Error::TokenExpired</span></code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/busyloop/suzuri/blob/0aea515eb073bb843844d567fcdf1c3edad8141b/src/suzuri.cr#L61" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="encode(payload:String|Bytes,key:String|Bytes,timestamp:Time=Time.utc,compress_level=3,compress_threshold:UInt64=512):String-class-method">
+      <div class="signature">
+        
+        def self.<strong>encode</strong>(payload : String | Bytes, key : String | Bytes, timestamp : Time = <span class="t">Time</span>.utc, compress_level = <span class="n">3</span>, compress_threshold : UInt64 = <span class="n">512</span>) : String
+
+        <a class="method-permalink" href="#encode(payload:String%7CBytes,key:String%7CBytes,timestamp:Time=Time.utc,compress_level=3,compress_threshold:UInt64=512):String-class-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Encodes a Suzuri token.</p>
+
+<p><strong>Examples:</strong></p>
+
+<pre><code><span class="c"># Encode</span>
+<span class="t">Suzuri</span>.encode(<span class="s">&quot;hello world&quot;</span>, <span class="t">KEY</span>) <span class="c"># =&gt; &quot;wB3AKYBaTwJc...&quot;</span>
+
+<span class="c"># Encode with compression disabled</span>
+<span class="t">Suzuri</span>.encode(<span class="s">&quot;hello world&quot;</span>, <span class="t">KEY</span>, compress_threshold: <span class="t">UInt64</span><span class="t">::</span><span class="t">MAX</span>) <span class="c"># =&gt; &quot;xAJyiEKfPLPi...&quot;</span>
+
+<span class="c"># Encode with a custom creation timestamp</span>
+<span class="t">Suzuri</span>.encode(<span class="s">&quot;hello world&quot;</span>, <span class="t">KEY</span>, <span class="t">Time</span>.utc(<span class="n">1985</span><span class="n">-10</span><span class="n">-26</span>)) <span class="c"># =&gt; &quot;mArTYmcfLyYy...&quot;</span>
+
+<span class="c"># Encode with a higher compression level. Value can be 1-19. Default is 3.</span>
+<span class="t">Suzuri</span>.encode(<span class="s">&quot;hello world&quot;</span>, <span class="t">KEY</span>, compress_level: <span class="n">10</span>) <span class="c"># =&gt; &quot;puI8lSpoAox5...&quot;</span></code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/busyloop/suzuri/blob/0aea515eb073bb843844d567fcdf1c3edad8141b/src/suzuri.cr#L24" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+
+
+
+</div>
+
+</body>
+</html>
