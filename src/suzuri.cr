@@ -3,7 +3,7 @@ require "zstd"
 require "base64"
 
 module Suzuri
-  VERSION = "1.0.0"
+  VERSION = "1.0.1"
 
   # Encodes a Suzuri token.
   #
