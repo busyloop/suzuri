@@ -85,7 +85,7 @@ module Suzuri
       raise Error::DecryptionFailed.new(ex.message)
     end
 
-    raise Error::TokenExpired.new("Token expired at #{timestamp}") if ttl && timestamp + ttl < Time.utc
+    raise Error::TokenExpired.new("Token expired at #{timestamp + ttl}") if ttl && timestamp + ttl < Time.utc
     Token.new(payload: payload, timestamp: timestamp)
   end
 
