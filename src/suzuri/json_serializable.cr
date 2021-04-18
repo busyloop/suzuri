@@ -25,10 +25,16 @@ require "../suzuri"
 # decoded = Person.from_suzuri(token, KEY)
 # decoded.name # => "bob"
 #
+# # Decode with ttl constraint
+# decoded = Person.from_suzuri(token, KEY, 5.seconds)
+#
 # # Decode with timestamp
 # decoded, timestamp = Person.from_suzuri_with_timestamp(token, KEY)
 # decoded.name # => "bob"
 # timestamp    # => Time
+#
+# # Decode with timestamp and ttl constraint
+# decoded, timestamp = Person.from_suzuri_with_timestamp(token, KEY, 5.seconds)
 # ```
 module JSON::Serializable
   # :nodoc:
