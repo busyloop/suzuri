@@ -3,8 +3,6 @@ require "zstd"
 require "base64"
 
 module Suzuri
-  VERSION = "1.0.2"
-
   # Encodes a Suzuri token.
   #
   # **Examples:**
@@ -26,7 +24,7 @@ module Suzuri
                   timestamp : Time = Time.utc,
                   compress_level = 3,
                   compress_threshold : UInt64 = 512) : String
-    cipher = Token::CIPHER.new(Sodium::SecureBuffer.new(key.to_slice))
+    cipher = Token::CIPHER.new(Sodium::SecureBuffer.copy_from(key.to_slice))
     nonce = Sodium::Nonce.random
 
     header = IO::Memory.new(Token::HEADER_SIZE)
@@ -75,7 +73,7 @@ module Suzuri
     end
 
     begin
-      cipher = Token::CIPHER.new(Sodium::SecureBuffer.new(key.to_slice))
+      cipher = Token::CIPHER.new(Sodium::SecureBuffer.copy_from(key.to_slice))
       payload = cipher.decrypt(ciphertext, nonce: nonce, additional: header.to_slice)
       if raw[0] == 0x81_u8
         dctx = Zstd::Decompress::Context.new

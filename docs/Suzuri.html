@@ -3,21 +3,16 @@
 <head>
   <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="generator" content="Crystal Docs 0.34.0">
+<meta name="generator" content="Crystal Docs 1.3.2">
 <meta name="crystal_docs.project_version" content="master-dev">
 <meta name="crystal_docs.project_name" content="suzuri">
+
 
 
 <link href="css/style.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="js/doc.js"></script>
 
-<svg class="hidden">
-  <symbol id="octicon-link" viewBox="0 0 16 16">
-    <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
-  </symbol>
-</svg>
-
-  <meta id="repository-name" content="suzuri">
+  <meta name="repository-name" content="suzuri">
   <title>Suzuri - suzuri master-dev</title>
   <script type="text/javascript">
     CrystalDocs.base_path = "";
@@ -25,6 +20,11 @@
 </head>
 <body>
 
+<svg class="hidden">
+  <symbol id="octicon-link" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+  </symbol>
+</svg>
 <div class="sidebar">
   <div class="sidebar-header">
     <div class="search-box">
@@ -44,7 +44,7 @@
     </div>
   </div>
 
-  <div class="search-results" class="hidden">
+  <div class="search-results hidden">
     <ul class="search-list"></ul>
   </div>
 
@@ -150,27 +150,13 @@
     Defined in:
   </h2>
   
-
-
-
-  
-    <h2>
-      <a id="constant-summary" class="anchor" href="#constant-summary">
-  <svg class="octicon-link" aria-hidden="true">
-    <use href="#octicon-link"/>
-  </svg>
-</a>
-      Constant Summary
-    </h2>
-  
-  <dl>
     
-      <dt class="entry-const" id="VERSION">
-        <strong>VERSION</strong> = <code><span class="s">&quot;1.0.2&quot;</span></code>
-      </dt>
-      
+      suzuri.cr
     
-  </dl>
+    <br/>
+  
+
+
 
 
 
@@ -187,14 +173,14 @@
   <ul class="list-summary">
     
       <li class="entry-summary">
-        <a href="#decode(token:String,key:String,ttl:Time::Span?=nil):Token-class-method" class="signature"><strong>.decode</strong>(token : String, key : String, ttl : Time::Span? = <span class="n">nil</span>) : Token</a>
+        <a href="#decode%28token%3AString%2Ckey%3AString%2Cttl%3ATime%3A%3ASpan%3F%3Dnil%29%3AToken-class-method" class="signature"><strong>.decode</strong>(token : String, key : String, ttl : Time::Span? = <span class="n">nil</span>) : Token</a>
         
           <div class="summary"><p>Decodes a Suzuri token.</p></div>
         
       </li>
     
       <li class="entry-summary">
-        <a href="#encode(payload:String%7CBytes,key:String%7CBytes,timestamp:Time=Time.utc,compress_level=3,compress_threshold:UInt64=512):String-class-method" class="signature"><strong>.encode</strong>(payload : String | Bytes, key : String | Bytes, timestamp : Time = <span class="t">Time</span>.utc, compress_level = <span class="n">3</span>, compress_threshold : UInt64 = <span class="n">512</span>) : String</a>
+        <a href="#encode%28payload%3AString%7CBytes%2Ckey%3AString%7CBytes%2Ctimestamp%3ATime%3DTime.utc%2Ccompress_level%3D3%2Ccompress_threshold%3AUInt64%3D512%29%3AString-class-method" class="signature"><strong>.encode</strong>(payload : String | Bytes, key : String | Bytes, timestamp : Time = <span class="t">Time</span>.utc, compress_level = <span class="n">3</span>, compress_threshold : UInt64 = <span class="n">512</span>) : String</a>
         
           <div class="summary"><p>Encodes a Suzuri token.</p></div>
         
@@ -229,16 +215,14 @@
         
         def self.<strong>decode</strong>(token : String, key : String, ttl : Time::Span? = <span class="n">nil</span>) : <a href="Suzuri/Token.html">Token</a>
 
-        <a class="method-permalink" href="#decode(token:String,key:String,ttl:Time::Span?=nil):Token-class-method">#</a>
+        <a class="method-permalink" href="#decode%28token%3AString%2Ckey%3AString%2Cttl%3ATime%3A%3ASpan%3F%3Dnil%29%3AToken-class-method">#</a>
       </div>
       
         <div class="doc">
           
           <p>Decodes a Suzuri token.</p>
-
 <p><strong>Examples:</strong></p>
-
-<pre><code><span class="c"># Decode</span>
+<pre><code class="language-crystal"><span class="c"># Decode</span>
 <span class="t">Suzuri</span>.decode(token, <span class="t">KEY</span>) <span class="c"># =&gt; Suzuri::Token</span>
 
 <span class="c"># Decode with a ttl constraint</span>
@@ -256,16 +240,14 @@
         
         def self.<strong>encode</strong>(payload : String | Bytes, key : String | Bytes, timestamp : Time = <span class="t">Time</span>.utc, compress_level = <span class="n">3</span>, compress_threshold : UInt64 = <span class="n">512</span>) : String
 
-        <a class="method-permalink" href="#encode(payload:String%7CBytes,key:String%7CBytes,timestamp:Time=Time.utc,compress_level=3,compress_threshold:UInt64=512):String-class-method">#</a>
+        <a class="method-permalink" href="#encode%28payload%3AString%7CBytes%2Ckey%3AString%7CBytes%2Ctimestamp%3ATime%3DTime.utc%2Ccompress_level%3D3%2Ccompress_threshold%3AUInt64%3D512%29%3AString-class-method">#</a>
       </div>
       
         <div class="doc">
           
           <p>Encodes a Suzuri token.</p>
-
 <p><strong>Examples:</strong></p>
-
-<pre><code><span class="c"># Encode</span>
+<pre><code class="language-crystal"><span class="c"># Encode</span>
 <span class="t">Suzuri</span>.encode(<span class="s">&quot;hello world&quot;</span>, <span class="t">KEY</span>) <span class="c"># =&gt; &quot;wB3AKYBaTwJc...&quot;</span>
 
 <span class="c"># Encode with compression disabled</span>

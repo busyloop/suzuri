@@ -1,5 +1,5 @@
 name: suzuri
-version: 2.0.0
+version: 2.0.1
 
 authors:
   - moe <moe@busyloop.net>
@@ -14,11 +14,12 @@ license: MIT
 dependencies:
   sodium:
     github: didactic-drunk/sodium.cr
-    version: ~> 1.2.2
+    # version: = 1.2.2
+    commit: 2e1856fedb58c80b6be21c0045481ff4e93ab7f3
 
   zstd:
     github: didactic-drunk/zstd.cr
-    version: ~> 1.1.0
+    version: ~> 1.2.0
 
 development_dependencies:
   timecop:
