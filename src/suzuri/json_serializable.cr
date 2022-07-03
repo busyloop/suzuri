@@ -38,7 +38,7 @@ require "../suzuri"
 # ```
 module JSON::Serializable
   # :nodoc:
-  def to_suzuri(key : String,
+  def to_suzuri(key : String | Bytes,
                 timestamp : Time = Time.utc,
                 compress_level = 3,
                 compress_threshold : UInt64 = 512)
@@ -47,13 +47,13 @@ module JSON::Serializable
 
   macro included
     # :nodoc:
-    def self.from_suzuri(token : String, key : String, ttl : Time::Span? = nil)
+    def self.from_suzuri(token : String, key : String | Bytes, ttl : Time::Span? = nil)
       token = Suzuri.decode(token, key, ttl)
       from_json(token.to_s)
     end
 
     # :nodoc:
-    def self.from_suzuri_with_timestamp(token : String, key : String, ttl : Time::Span? = nil)
+    def self.from_suzuri_with_timestamp(token : String, key : String | Bytes, ttl : Time::Span? = nil)
       token = Suzuri.decode(token, key, ttl)
       { from_json(token.to_s), token.timestamp }
     end

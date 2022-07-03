@@ -56,7 +56,7 @@ module Suzuri
   # # Decode with a ttl constraint
   # Suzuri.decode(token, KEY, 5.minutes) # => Suzuri::Error::TokenExpired
   # ```
-  def self.decode(token : String, key : String, ttl : Time::Span? = nil) : Token
+  def self.decode(token : String, key : String | Bytes, ttl : Time::Span? = nil) : Token
     begin
       raw = Base64.decode(token)
     rescue ex : Exception

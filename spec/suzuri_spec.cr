@@ -38,7 +38,7 @@ describe Suzuri do
     Suzuri.decode(token_c, TEST_KEY).to_s.should eq payload
   end
 
-  it "raises on encode when key is not 32 bytes long" do
+  it "raises n encode when key is not 32 bytes long" do
     expect_raises(ArgumentError, /key size mismatch/) do
       Suzuri.encode("hello world", "too short")
     end
@@ -46,7 +46,15 @@ describe Suzuri do
     expect_raises(ArgumentError, /key size mismatch/) do
       Suzuri.encode("hello world", TEST_KEY + "too long")
     end
-  end
+
+    expect_raises(ArgumentError, /key size mismatch/) do
+      Suzuri.encode("hello world", "too short".to_slice)
+    end
+
+    expect_raises(ArgumentError, /key size mismatch/) do
+      Suzuri.encode("hello world", (TEST_KEY + "too long").to_slice)
+    end
+   end
 
   it "raises on decode when key is not 32 bytes long" do
     token = Suzuri.encode("hello world", TEST_KEY)
@@ -55,7 +63,15 @@ describe Suzuri do
     end
 
     expect_raises(ArgumentError, /key size mismatch/) do
+      Suzuri.decode(token, "too short".to_slice)
+    end
+
+    expect_raises(ArgumentError, /key size mismatch/) do
       Suzuri.decode(token, TEST_KEY + "too long")
+    end
+
+    expect_raises(ArgumentError, /key size mismatch/) do
+      Suzuri.decode(token, (TEST_KEY + "too long").to_slice)
     end
   end
 
