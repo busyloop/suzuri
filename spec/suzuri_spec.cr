@@ -38,7 +38,7 @@ describe Suzuri do
     Suzuri.decode(token_c, TEST_KEY).to_s.should eq payload
   end
 
-  it "raises n encode when key is not 32 bytes long" do
+  it "raises on encode when key is not 32 bytes long" do
     expect_raises(ArgumentError, /key size mismatch/) do
       Suzuri.encode("hello world", "too short")
     end
